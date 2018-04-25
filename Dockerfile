@@ -1,8 +1,8 @@
-FROM frolvlad/alpine-oraclejdk8
+FROM openjdk:10-jdk
 
 EXPOSE 8080
 
-ENV GROOVY_VERSION=2.4.5.4
+ENV GROOVY_VERSION=2.4.15
 
 RUN mkdir "/usr/lib/groovy" && \
     cd "/tmp" && \
