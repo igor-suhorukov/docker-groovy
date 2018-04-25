@@ -1,5 +1,5 @@
 # docker-groovy
-Run groovy-grape-aether as docker container
+Run groovy as docker container. Load groovy scripts almost from anywhere AWS S3, HDFS, maven repository etc.
 
 For example:
-docker run -e GROOVY_SCRIPT=https://raw.githubusercontent.com/igor-suhorukov/git-configuration/master/gitblit.groovy docker-groovy
+docker run -d -p 8080:8080 suhorukov/docker-groovy URL(script-path)
